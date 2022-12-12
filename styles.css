@@ -102,16 +102,46 @@ li{
 #mood{
     background-color: var(--dark);
     width: 100vw;
-    height: 60vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.mood-left{
-    width: 50%;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: space-around;
+}
+
+.mood-top{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    color: var(--white2);
+    margin: 2rem auto 2rem auto;
+}
+
+.mood-h2{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.mood-p{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.mood-bottom{
+    width: 80%;
+    height: 50%;
+    background-color: var(--white2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    color: var(--white2);
+    margin: 2rem auto 2rem auto;
+}
+
+.ul-mood-bottom{
+    display: flex;
+    flex-direction: row;
 }
