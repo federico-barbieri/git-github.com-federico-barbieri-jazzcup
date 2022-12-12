@@ -190,6 +190,7 @@ li{
 .releases-h3{
     font-size: 1.5rem;
     padding-left: 2rem;
+    text-decoration: underline 10px var(--orange);
 }
 
 .releases-div{
@@ -221,9 +222,23 @@ li{
     justify-content: center;
     height: 15rem;
     width: 15rem;
-    margin: 5rem 2rem 0rem 0rem;
+    margin: 5rem 4rem 0rem 0rem;
     text-align: center;
-    filter: drop-shadow(1px 4px 5px black);
-    background-color: var(--violet);
+    border: 2px solid black;
+    background: var(--gray);
+    color: var(--dark);
+    position: relative;
+
+}
+
+.div-inside{
+    border: 2px solid black;
+    border-bottom: none;
+    border-left: none;
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    transform: translate(1rem, -1rem);
+
 }
 
