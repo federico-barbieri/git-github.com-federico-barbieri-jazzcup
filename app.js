@@ -36,5 +36,77 @@ function everything () {
     setTimeout(everything, 11000);
 }
 
+// fetching stuff
+
+//normal url
+const url = "https://jazzcup-f9ed.restdb.io/rest/albums";
+
+// api key
+
+const options = { 
+    headers: {
+        'x-apikey': "639cf150f43a573dae0955cd"
+    }, 
+}
+
+
+fetch(url, options)
+.then(response => {
+    if (!response.ok) {
+        throw Error(response.statusText);
+    }
+        return response.json();
+})
+.then(data => {
+    // we have the data 
+    console.log(data); 
+    handleData(data);
+})
+.catch (e => {
+    // something went wrong
+    console.error("An error has occured.", e.message);
+})
+
+
+// FUNCTION FOR THE albums CATEGORY
+
+function handleData(jazzData){
+    
+    
+    jazzData.forEach( album => {
+
+        // make template
+
+        // grab it
+
+
+            const temp = document.querySelector('.template').content;
+
+            // clone it
+            const clone = temp.cloneNode(true);
+
+
+            // album name
+
+            clone.querySelector('.new-release-album').textContent = album.name; 
+
+            // album image
+
+            clone.querySelector('img').src = album.img;
+
+            // band name
+
+            clone.querySelector('.new-release-band').textContent = album.band; 
+
+            // append to parent
+
+            const daddy = document.getElementById("new-releases");
+
+            daddy.appendChild(clone); }
+
+        )}
+
+
+
 
 
