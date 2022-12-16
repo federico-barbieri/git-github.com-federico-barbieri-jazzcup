@@ -141,6 +141,26 @@ li{
     color: var(--white2);
 }
 
+.template-article{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    width: 200vw;
+    height: 70%;
+}
+
+.inside-template{
+    display: flex;
+    flex-direction: column;
+}
+
+.template-img{
+    width: 5rem;
+    height: auto;
+}
+
 
 /* FOOTER */
 

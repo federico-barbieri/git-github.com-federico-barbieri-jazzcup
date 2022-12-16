@@ -100,7 +100,7 @@ function handleData(jazzData){
 
             // append to parent
 
-            const daddy = document.getElementById("new-releases");
+            const daddy = document.querySelector(".template-article");
 
             daddy.appendChild(clone); }
 
