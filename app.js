@@ -3,7 +3,7 @@ const vinyl = document.querySelector('.vinyl-hero');
 
 
 window.onload = () => {
-    vinyl.classList.add("vinyl-spins");
+   // vinyl.classList.add("vinyl-spins");
     everything();
 }
 
@@ -97,6 +97,10 @@ function handleData(jazzData){
             // band name
 
             clone.querySelector('.new-release-band').textContent = album.band; 
+
+               // price
+
+               clone.querySelector('.new-release-price').textContent = `${album.price} dkk`; 
 
             // append to parent
 
