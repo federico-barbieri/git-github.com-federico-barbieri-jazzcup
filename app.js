@@ -159,6 +159,100 @@ function handleData(jazzData){
             })
 
 
+        // modal 2
+
+        // malcolm list element
+
+        let malcolmLi = document.querySelector('.malcolm-li');
+
+        // jacob paragraph
+
+        let malcolmP = document.querySelector('.malcolm');
+
+        // malcolm arrow down
+
+        let arrowModal2 = document.querySelector('.arrowModal2');
+
+        // grab modal 1
+
+        const modal2Content = document.querySelector('.modal2Content');
+
+        // Grab "open modal 1" btn 
+
+        const openModal2 = document.getElementById("openModal2");
+
+        // make modal visible
+
+            openModal2.addEventListener('click', () => {
+                modal2Content.style.display = "block";
+                malcolmLi.style.backgroundColor = "var(--yellow)";
+                malcolmP.innerHTML = "<strong>Malcolm Lohm</strong>";
+                arrowModal2.style.opacity = "0";
+            })
+
+        // close modal
+
+        // Get the btn element that closes the modal
+
+            const closeModalTwo = document.getElementById("closeModal2");
+
+
+            closeModalTwo.addEventListener('click', () => {
+                modal2Content.style.display = "none";
+                malcolmLi.style.backgroundColor = "var(--white2)";
+                malcolmP.innerHTML = "Malcolm Lohm";
+                arrowModal2.style.opacity = "1";
+            })
+
+
+
+
+        // modal 3
+
+        // robert list element
+
+        let robertLi = document.querySelector('.robert-li');
+
+        // robert paragraph
+
+        let robertP = document.querySelector('.robert');
+
+        // robert arrow down
+
+        let arrowModal3 = document.querySelector('.arrowModal3');
+
+        // grab modal 3
+
+        const modal3Content = document.querySelector('.modal3Content');
+
+        // Grab "open modal 1" btn 
+
+        const openModal3 = document.getElementById("openModal3");
+
+        // make modal visible
+
+            openModal3.addEventListener('click', () => {
+                modal3Content.style.display = "block";
+                robertLi.style.backgroundColor = "var(--yellow)";
+                robertP.innerHTML = "<strong>Robert Dahl</strong>";
+                arrowModal3.style.opacity = "0";
+            })
+
+        // close modal
+
+        // Get the btn element that closes the modal
+
+            const closeModalThree = document.getElementById("closeModal3");
+
+
+            closeModalThree.addEventListener('click', () => {
+                modal3Content.style.display = "none";
+                robertLi.style.backgroundColor = "var(--white2)";
+                robertP.innerHTML = "Robert Dahl";
+                arrowModal3.style.opacity = "1";
+            })
+
+
 
 
 

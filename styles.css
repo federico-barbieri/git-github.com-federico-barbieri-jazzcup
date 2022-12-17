@@ -211,7 +211,7 @@ li{
 
 #events{
     width: 100vw;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -227,7 +227,7 @@ li{
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
-    margin: 1rem auto 5rem auto;
+    margin: 1rem auto 3rem auto;
 }
 
 .events-h2{
@@ -369,6 +369,171 @@ li{
 }
 
 #closeModal1:hover{
+    cursor: pointer;
+}
+
+/* MODAL 2 */
+
+#openModal2{
+    background-color: transparent;
+    border: none;
+}
+
+#openModal2:hover{
+    cursor: pointer;
+}
+
+.modal2Content{
+    display: none;
+    margin: 2rem auto;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.info-close2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.modal2-info{
+    width: 70%;
+}
+
+.modal2-btns{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 1rem auto;
+}
+
+.info-btn{
+    background-color: transparent;
+    border: 1px solid var(--dark);
+}
+
+.info-btn:hover{
+    cursor: pointer;
+    background-color: var(--dark);
+    color: var(--white2);
+}
+
+.buy-btn{
+    background-color: var(--dark);
+    color: var(--yellow);
+}
+
+.buy-btn:hover{
+    background-color: var(--yellow);
+    color: var(--dark);
+    cursor: pointer;
+    border: 1px solid var(--dark);
+}
+
+.modal2-btns > button {
+    padding: 0.5rem 1.5rem;
+    width: 60%;
+    border-radius: 30px;
+}
+
+.btn-span{
+    padding-right: 2rem;
+}
+
+#closeModal2{
+    background-color: transparent;
+    padding: 0.5rem;   
+}
+
+#closeModal2:hover{
+    cursor: pointer;
+}
+
+
+/* MODAL 3 */
+
+#openModal3{
+    background-color: transparent;
+    border: none;
+}
+
+#openModal3:hover{
+    cursor: pointer;
+}
+
+.modal3Content{
+    display: none;
+    margin: 2rem auto;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.info-close3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.modal3-info{
+    width: 70%;
+}
+
+.modal3-btns{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 1rem auto;
+}
+
+.info-btn{
+    background-color: transparent;
+    border: 1px solid var(--dark);
+}
+
+.info-btn:hover{
+    cursor: pointer;
+    background-color: var(--dark);
+    color: var(--white2);
+}
+
+.buy-btn{
+    background-color: var(--dark);
+    color: var(--yellow);
+}
+
+.buy-btn:hover{
+    background-color: var(--yellow);
+    color: var(--dark);
+    cursor: pointer;
+    border: 1px solid var(--dark);
+}
+
+.modal3-btns > button {
+    padding: 0.5rem 1.5rem;
+    width: 60%;
+    border-radius: 30px;
+}
+
+.btn-span{
+    padding-right: 2rem;
+}
+
+#closeModal3{
+    background-color: transparent;
+    padding: 0.5rem;   
+}
+
+#closeModal3:hover{
     cursor: pointer;
 }
 
