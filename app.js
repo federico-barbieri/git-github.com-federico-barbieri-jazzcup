@@ -88,7 +88,7 @@ function handleData(jazzData){
 
             // album name
 
-            clone.querySelector('.new-release-album').textContent = album.name; 
+            clone.querySelector('.new-release-album').innerHTML = `<strong>${album.name}</strong>`; 
 
             // album image
 
@@ -100,7 +100,7 @@ function handleData(jazzData){
 
                // price
 
-               clone.querySelector('.new-release-price').textContent = `${album.price} dkk`; 
+               clone.querySelector('.new-release-price').innerHTML = `<strong>${album.price} dkk</strong>`; 
 
             // append to parent
 

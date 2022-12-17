@@ -119,7 +119,7 @@ li{
 
 
 
-/* NEW RELEASES */
+/* NEW RELEASES SECTION */
 
 #new-releases{
     background-color: var(--white2);
@@ -129,8 +129,9 @@ li{
     flex-direction: column;
     align-items: flex-start;
     color: var(--dark);
-
 }
+
+/* NEW RELEASES TITLE */
 
 .releases-h3{
     font-size: 1.5rem;
@@ -140,6 +141,8 @@ li{
     margin-top: 2rem;
     color: var(--white2);
 }
+
+/* NEW RELEASES TEMPLATE */
 
 .template-article{
     overflow-x: scroll;
@@ -152,18 +155,21 @@ li{
     margin: 3rem 0 0 0;
 }
 
+/* NEW RELEASES INDIVIDUAL CARD */
+
 .inside-template{
     display: inline-block;
     
     flex-direction: column;
     height: 100%;
     width: 80vw;
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
+
+/* NEW RELEASES ALBUM IMAGE */
 
 .template-img{
     width: 80%;
@@ -171,13 +177,30 @@ li{
     filter: drop-shadow(2px 4px 6px var(--dark));
 }
 
+.all-but-img{
+    height: 50%;
+    width: 80%;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+/* NEW RELEASES BAND NAME */
+
+.new-release-band{
+    color: var(--gray);
+    text-align: left;
+}
+
+/* NEW RELEASES PRICE AND ALBUM DIV */
+
 .template-price-album{
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 15%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 1rem 0;
 }
 
 
