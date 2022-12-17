@@ -75,9 +75,9 @@ function handleData(jazzData){
     
     jazzData.forEach( album => {
 
-        // make template
+        // grab only if it's a new release
 
-        // grab it
+        if (album.new == true){
 
 
             const temp = document.querySelector('.template').content;
@@ -106,7 +106,7 @@ function handleData(jazzData){
 
             const daddy = document.querySelector(".template-article");
 
-            daddy.appendChild(clone); }
+            daddy.appendChild(clone); }}
 
         )}
 
