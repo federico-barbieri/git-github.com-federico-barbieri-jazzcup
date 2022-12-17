@@ -111,6 +111,45 @@ function handleData(jazzData){
         )}
 
 
+        // MODAL WORLD
+
+        // grab modal 1
+
+        const modal1Content = document.querySelector('.modal1Content');
+
+        // Grab "open modal 1" btn 
+
+        const openModal1 = document.getElementById("openModal1");
+
+        // make modal visible
+
+            let liAppend = document.querySelector('.events-li');
+
+            openModal1.addEventListener('click', () => {
+                modal1Content.style.display = "block";
+                jacobLi.style.backgroundColor = "var(--yellow)";
+                jacobP.innerHTML = "<strong>Jacob Fischer</strong>";
+            })
+
+        // close modal
+
+        // Get the btn element that closes the modal
+
+            const closeModalOne = document.getElementById("closeModal1");
+
+            let jacobLi = document.querySelector('.jacob-li');
+
+            let jacobP = document.querySelector('.jacob');
+
+
+            closeModalOne.addEventListener('click', () => {
+                modal1Content.style.display = "none";
+                jacobLi.style.backgroundColor = "var(--white2)";
+                jacobP.innerHTML = "Jacob Fischer";
+            })
+
+
+
 
 
 
