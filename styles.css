@@ -275,7 +275,19 @@ li{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-   
+}
+
+.events-date{
+    display: inline-flex;
+    font-size: 1rem;
+    
+}
+
+.events-artist{
+    display: inline-flex;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    margin: 1rem 0.5rem 0 0;
 }
 
 /* MODAL 1 */
@@ -293,6 +305,7 @@ li{
     display: none;
     margin: 2rem auto;
     width: 100%;
+    padding-bottom: 2rem;
 }
 
 .info-close1{
@@ -352,25 +365,11 @@ li{
 
 #closeModal1{
     background-color: transparent;
-    border: none;
+    padding: 0.5rem;   
 }
 
 #closeModal1:hover{
     cursor: pointer;
-}
-
-
-.events-date{
-    display: inline-flex;
-    font-size: 1rem;
-    
-}
-
-.events-artist{
-    display: inline-flex;
-    font-size: 1rem;
-    margin-right: 0.5rem;
-    margin: 1rem 0.5rem 0 0;
 }
 
 

@@ -113,6 +113,20 @@ function handleData(jazzData){
 
         // MODAL WORLD
 
+        // modal 1
+
+        // jacob list element
+
+        let jacobLi = document.querySelector('.jacob-li');
+
+        // jacob paragraph
+
+        let jacobP = document.querySelector('.jacob');
+
+        // jacob arrow down
+
+        let arrowModal1 = document.querySelector('.arrowModal1');
+
         // grab modal 1
 
         const modal1Content = document.querySelector('.modal1Content');
@@ -123,12 +137,11 @@ function handleData(jazzData){
 
         // make modal visible
 
-            let liAppend = document.querySelector('.events-li');
-
             openModal1.addEventListener('click', () => {
                 modal1Content.style.display = "block";
                 jacobLi.style.backgroundColor = "var(--yellow)";
                 jacobP.innerHTML = "<strong>Jacob Fischer</strong>";
+                arrowModal1.style.opacity = "0";
             })
 
         // close modal
@@ -137,15 +150,12 @@ function handleData(jazzData){
 
             const closeModalOne = document.getElementById("closeModal1");
 
-            let jacobLi = document.querySelector('.jacob-li');
-
-            let jacobP = document.querySelector('.jacob');
-
 
             closeModalOne.addEventListener('click', () => {
                 modal1Content.style.display = "none";
                 jacobLi.style.backgroundColor = "var(--white2)";
                 jacobP.innerHTML = "Jacob Fischer";
+                arrowModal1.style.opacity = "1";
             })
 
 
