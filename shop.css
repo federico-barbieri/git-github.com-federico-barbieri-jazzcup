@@ -142,8 +142,8 @@ li{
 #shop-grid{
     width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(autofill, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(autofit, 1fr);
     place-items: center;
     place-content: center;
     place-self: center;
@@ -168,7 +168,7 @@ li{
 
 }
 
-/* NEW RELEASES ALBUM IMAGE */
+/* SHOP ALBUM IMAGE */
 
 .template-img{
     max-width: 80%;
