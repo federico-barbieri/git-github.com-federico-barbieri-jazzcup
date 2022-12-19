@@ -103,11 +103,6 @@ li{
     cursor: pointer;
 }
 
-li:hover{
-    transition: all 0.5s;
-    color: var(--yellow);
-}
-
 .first-li{
     margin-top: 10rem;
     cursor: none;
