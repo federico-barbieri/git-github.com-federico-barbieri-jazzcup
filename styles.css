@@ -76,7 +76,7 @@ body.active{
     color: var(--white2);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     font-size: 1rem;
     padding: 0.5rem;
@@ -92,6 +92,7 @@ body.active{
 
 li{
     list-style-type: none;
+    margin: 3rem auto;
 }
 
 /* HERO SECTION */
