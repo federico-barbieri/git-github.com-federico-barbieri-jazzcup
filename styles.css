@@ -121,9 +121,9 @@ li{
     background-color: var(--white2);
     overflow: hidden;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     position: relative;
     background: url('img/hero.jpg');
     background-position: center;
@@ -133,16 +133,30 @@ li{
 
 .jazz-h1{
     display: block;
-
     width: 80%;
     font-size: 2.5rem;
     text-align: center;
-    margin: 0rem auto 0 auto;
+    margin: 5rem auto 0 auto;
     z-index: 10;
     color: var(--white2);
     font-family: articulat-heavy-cf, sans-serif;
     font-weight: 900;
     font-style: normal;
+}
+
+.hero-btn{
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+    color: var(--dark);
+    background-color: var(--yellow);
+    border: none;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    transition: all 0.5s;
+    color: var(--white2);
+    background-color: var(--dark);
 }
 
 .vinyl-hero{
