@@ -132,6 +132,7 @@ li{
     position: relative;
     padding: 1rem;
     color: var(--white2);
+    overflow: hidden;
 }
 
 .about-h1{
