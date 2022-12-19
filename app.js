@@ -1,4 +1,22 @@
 
+// burger menu 
+
+const burger = document.querySelector('.burger');
+
+const navUl = document.querySelector('.main-ul');
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    navUl.classList.toggle('active');
+})
+
+document.querySelectorAll('.main-li').forEach(item => item.addEventListener('click', () =>{
+    burger.classList.remove('active');
+    navUl.classList.remove('active');
+}))
+
+
+
 const vinyl = document.querySelector('.vinyl-hero');
 
 

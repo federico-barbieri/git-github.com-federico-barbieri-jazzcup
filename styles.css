@@ -43,16 +43,46 @@
     padding: 1rem;
 }
 
+/* BURGER MENU */
+
+.burger{
+    color: white;
+    margin: 0.5rem 1.5rem 0.5rem 0;
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.burger.active{
+opacity: 1;
+}
+
+.main-ul.active{
+    left: 0%;
+    z-index: 50;
+}
+
+
+
 /* MAIN UL */
 
 .main-ul{
     color: var(--white2);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    width: 80%;
+    width: 100%;
     font-size: 1rem;
     padding: 0.5rem;
+    position: fixed;
+    left: -100%;
+    top: 4rem;
+    height: 100vh;
+    background-color: var(--dark);
+    text-align: center;
+    transition: 0.3s;
+    z-index: 50;
 }
 
 li{
