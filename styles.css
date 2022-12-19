@@ -186,6 +186,10 @@ li{
     color: var(--dark);
 }
 
+.releases-arrow{
+    cursor: pointer;
+}
+
 /* NEW RELEASES TEMPLATE */
 
 .template-article{
@@ -196,7 +200,7 @@ li{
     flex-direction: row;
     width: 100%;
     height: 70%;
-    margin: 3rem 0 0 0;
+    margin: 0rem 0 0 0;
 }
 
 /* NEW RELEASES INDIVIDUAL CARD */
@@ -219,6 +223,7 @@ li{
     max-width: 80%;
     height: 50%;
     filter: drop-shadow(2px 4px 6px var(--dark));
+    cursor: pointer;
 }
 
 .all-but-img{
@@ -278,6 +283,10 @@ li{
     padding: 0 0.5rem 0.5rem 0;
     margin-top: 2rem;
     color: var(--dark);
+}
+
+.events-arrow{
+    cursor: pointer;
 }
 
 /* EVENTS OL */
