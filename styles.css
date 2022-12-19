@@ -16,6 +16,12 @@
     --yellow: #FFF500;
 }
 
+a{
+    color: inherit;
+    text-decoration: none;
+    
+}
+
 /* CONTAINER */
 
 #container{
@@ -94,6 +100,12 @@ body.active{
 li{
     list-style-type: none;
     margin: 3rem auto;
+    cursor: pointer;
+}
+
+li:hover{
+    transition: all 0.5s;
+    color: var(--yellow);
 }
 
 .first-li{

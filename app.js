@@ -87,7 +87,7 @@ fetch(url, options)
 })
 .then(data => {
     // we have the data 
-    console.log(data); 
+   // console.log(data); 
     handleData(data);
 })
 .catch (e => {
