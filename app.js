@@ -282,6 +282,72 @@ function handleData(jazzData){
 
 
 
+        // MEMBERSHIP LIST
+
+        // BENEFITS
+
+        const openMembershipOne = document.querySelector('#openMembership1');
+
+        const pBenefits = document.querySelector('.p-benefits');
+
+        const arrowDown = document.querySelector('.arrowMembership1');
+
+        openMembershipOne.addEventListener('click', () => {
+            pBenefits.style.display = "block";
+
+            if(openMembershipOne.innerHTML === '<i class="fa-solid fa-arrow-down arrowMembership1"></i>'){
+                openMembershipOne.innerHTML = '<i class="fa-solid fa-arrow-up arrowMembership1"></i>';
+            } else{
+                openMembershipOne.innerHTML = '<i class="fa-solid fa-arrow-down arrowMembership1"></i>';
+                pBenefits.style.display = "none";
+            }
+            
+        })
+
+
+        // PRICE
+
+        const openMembershipTwo = document.querySelector('#openMembership2');
+
+        const pPrice = document.querySelector('.p-price');
+
+        const arrowDown2 = document.querySelector('.arrowMembership2');
+
+        openMembershipTwo.addEventListener('click', () => {
+            pPrice.style.display = "block";
+
+            if(openMembershipTwo.innerHTML === '<i class="fa-solid fa-arrow-down arrowMembership2"></i>'){
+                openMembershipTwo.innerHTML = '<i class="fa-solid fa-arrow-up arrowMembership2"></i>';
+            } else{
+                openMembershipTwo.innerHTML = '<i class="fa-solid fa-arrow-down arrowMembership2"></i>';
+                pPrice.style.display = "none";
+            }
+            
+        })
+
+
+         // FAQ
+
+         const openMembershipThree = document.querySelector('#openMembership3');
+
+         const pFaq = document.querySelector('.p-faq');
+ 
+         const arrowDown3 = document.querySelector('.arrowMembership3');
+ 
+         openMembershipThree.addEventListener('click', () => {
+             pFaq.style.display = "block";
+ 
+             if(openMembershipThree.innerHTML === '<i class="fa-solid fa-arrow-down arrowMembership3"></i>'){
+                 openMembershipThree.innerHTML = '<i class="fa-solid fa-arrow-up arrowMembership3"></i>';
+             } else{
+                 openMembershipThree.innerHTML = '<i class="fa-solid fa-arrow-down arrowMembership3"></i>';
+                 pFaq.style.display = "none";
+             }
+             
+         })
+
+
+
 
 
 

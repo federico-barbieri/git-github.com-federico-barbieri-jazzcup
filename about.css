@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 16px;
+    --dark: #252422;
+    --orange: #FF5500;
+    --white: #FFFFFF;
+    --white2: #FFFCF2;
+    --violet: #B88ED7;
+    --green: #76C893;
+    --gray: #D9D9D9;
+    --black: #000000;
+    --yellow: #FFF500;
+}
+
+/* CONTAINER */
+
+#container{
+    width: 100vw;
+    font-family: articulat-cf, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--white2);
+}
+
+/* MAIN NAV */
+
+.main-nav{
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.jazz-logo{
+    width: 8rem;
+    max-height: auto;
+    padding: 1rem;
+}
+
+/* BURGER MENU */
+
+.burger{
+    color: white;
+    margin: 0.5rem 1.5rem 0.5rem 0;
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transform: scale(1.5);
+}
+
+.burger.active{
+opacity: 1;
+}
+
+.main-ul.active{
+    left: 0%;
+    z-index: 50;
+}
+
+body.active{
+    overflow: hidden;
+}
+
+
+
+/* MAIN UL */
+
+.main-ul{
+    color: var(--white2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    position: fixed;
+    left: -100%;
+    top: 4rem;
+    height: 100vh;
+    background-color: var(--dark);
+    text-align: center;
+    transition: 0.3s;
+    z-index: 50;
+   
+}
+
+li{
+    list-style-type: none;
+    margin: 3rem auto;
+}
+
+.first-li{
+    margin-top: 10rem;
+}
+
+/* HERO SECTION */
+
+#hero{
+    width: 100vw;
+    background-color: var(--dark);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 1rem;
+    color: var(--white2);
+}
+
+.about-h1{
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    margin: 5rem auto 2rem auto;
+    z-index: 10;
+    color: var(--white2);
+    font-family: articulat-heavy-cf, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: left;
+}
+
+.hero-about-span{
+    font-weight: 400;
+}
+
+.about-img{
+    background-image: url("img/about-album-yellow.png");
+    width: 20rem;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 -10rem 2rem 0;
+}
+
+.hero-p{
+    text-align: left;
+    line-height: 2;
+    padding-bottom: 2rem;
+}
+
+.contact-btn{
+    background-color: var(--yellow);
+    color: var(--dark);
+    border: 1px solid var(--dark);
+    margin: 2rem auto;
+    border-radius: 30px;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+}
+
+.contact-btn:hover{
+    transition: all 0.5s;
+    background-color: var(--white2);
+    border: 1px solid var(--yellow);
+}
+
+
+/* MEMBERSHIP SECTION */
+
+#membership{
+    width: 100vw;
+    background-color: var(--white2);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 1rem;
+    color: var(--dark);
+}
+
+.membership-h2{
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 6rem auto 2rem auto;
+    z-index: 10;
+    color: var(--dark);
+    font-family: articulat-heavy-cf, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: right;
+}
+
+.membership-about-span{
+    font-weight: 400;
+}
+
+.membership-img{
+    background-image: url("img/membership-pic.png");
+    width: 20rem;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: -12rem 0 2rem -16rem;
+}
+
+.membership-p{
+    text-align: left;
+    line-height: 2;
+    padding-bottom: 2rem;
+}
+
+.membership-btn{
+    background-color: var(--yellow);
+    color: var(--dark);
+    border: 1px solid var(--dark);
+    margin: 2rem auto;
+    border-radius: 30px;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+}
+
+.membership-btn:hover{
+    transition: all 0.5s;
+    background-color: var(--white2);
+    border: 1px solid var(--yellow);
+}
+
+/* MEMBERSHIP UL */
+
+.membership-ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.membership-li{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+.inside-li-div{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+hr{
+    width: 80%;
+    color: var(--dark);
+}
+
+/* arrows down */
+
+.arrow-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* membership paragraphs */
+
+.p-benefits{
+    padding: 1rem;
+    width: 80%;
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: none;
+    text-align: left;
+}
+
+.p-price{
+    padding: 1rem;
+    width: 80%;
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+    display: none;
+}
+
+.p-faq{
+    padding: 1rem;
+    width: 80%;
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+    display: none;
+}
+
+
+/* membership btn */
+
+.membership-btn{
+    background-color: var(--dark);
+    color: var(--white2);
+    border: 1px solid var(--dark);
+    margin: 2rem auto;
+    border-radius: 30px;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+}
+
+.membership-btn:hover{
+    transition: all 0.5s;
+    background-color: var(--white2);
+    color: var(--dark);
+    border: 1px solid var(--dark);
+}
+
+
+
+/* FOOTER */
+
+footer{
+    background-color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer{
+    width: 8rem;
+    max-height: auto;
+    padding: 1rem;
+}
