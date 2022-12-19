@@ -93,8 +93,13 @@ body.active{
     background-color: var(--dark);
     text-align: center;
     transition: 0.3s;
-    z-index: 50;
-   
+    z-index: 50; 
+}
+
+.main-ul > li:hover {
+    transition: all 0.5s;
+    color: var(--yellow);
+    text-decoration: underline var(--yellow);
 }
 
 li{
