@@ -63,6 +63,10 @@ opacity: 1;
     z-index: 50;
 }
 
+body.active{
+    overflow: hidden;
+}
+
 
 
 /* MAIN UL */
