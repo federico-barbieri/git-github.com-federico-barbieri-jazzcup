@@ -154,7 +154,7 @@ li{
 }
 
 .about-img{
-    background-image: url("img/about-album-yellow.png");
+    background-image: url("../img/about-album-yellow.png");
     width: 20rem;
     height: 30vh;
     background-repeat: no-repeat;
@@ -220,7 +220,7 @@ li{
 }
 
 .membership-img{
-    background-image: url("img/membership-pic.png");
+    background-image: url("../img/membership-pic.png");
     width: 20rem;
     height: 30vh;
     background-repeat: no-repeat;

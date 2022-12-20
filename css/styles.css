@@ -125,7 +125,7 @@ li{
     align-items: center;
     justify-content: space-around;
     position: relative;
-    background: url('img/hero.jpg');
+    background: url('../img/hero.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
