@@ -123,6 +123,7 @@ li{
     align-items: center;
     justify-content: space-around;
     color: var(--dark);
+    overflow: hidden;
 }
 
 
@@ -143,13 +144,14 @@ li{
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(1fr);
-
+    grid-template-rows: repeat(autofit, 1fr);
     justify-content: center;
     align-content: center;
     margin: 3rem auto;
     text-align: center;
     border: 2px solid red;
+    overflow: hidden;
+    padding: 1rem;
 }
 
 
