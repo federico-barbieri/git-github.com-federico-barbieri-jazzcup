@@ -334,3 +334,34 @@ footer{
     max-width: 40%;
 }
 }
+
+
+/* 800PX QUERY */
+
+@media only screen and (min-width: 800px){
+    /* GRID */
+
+#events-grid{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    place-content: center;
+    place-self: center;
+    justify-content: center;
+    align-content: center;
+    margin: 1rem auto;
+    text-align: center;
+    overflow: hidden;
+    grid-gap: 5rem;
+    padding: 0;
+}
+
+#events-grid > li > img {
+    width: 20rem;
+    height: 15rem;
+    filter: drop-shadow(2px 4px 6px var(--dark));
+    margin: 0 auto 2rem auto;
+}
+}
