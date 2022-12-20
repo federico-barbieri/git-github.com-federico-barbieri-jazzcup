@@ -641,6 +641,10 @@ footer{
     justify-content: center;
 }
 
+.footer-address{
+    margin-top: 2rem;
+}
+
 footer > p {
     padding: 2rem;
     font-size: 1rem;
