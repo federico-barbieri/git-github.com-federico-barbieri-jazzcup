@@ -178,8 +178,8 @@ li{
 /* SHOP ALBUM IMAGE */
 
 .template-img{
-    max-width: 50%;
-    height: auto;
+    width: 15rem;
+    height: 15rem;
     filter: drop-shadow(2px 4px 6px var(--dark));
     cursor: pointer;
 
