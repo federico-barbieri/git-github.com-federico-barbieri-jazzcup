@@ -144,7 +144,7 @@ li{
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(autofit, 1fr);
+    grid-template-rows: repeat(16, 1fr);
     justify-content: center;
     align-content: center;
     margin: 3rem auto;
