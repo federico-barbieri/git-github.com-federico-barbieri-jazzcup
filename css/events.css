@@ -238,3 +238,79 @@ footer > p {
 .student-project > span{
     padding-left: 1rem;
 }
+
+
+/* 500PX MEDIA QUERY */
+
+@media only screen and (min-width: 500px){
+
+    /* BURGER MENU */
+
+.burger{
+    color: white;
+    margin: 0.5rem 1.5rem 0.5rem 0;
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transform: scale(1.5);
+}
+
+.burger.active{
+opacity: 1;
+}
+
+.main-ul.active{
+    left: 0%;
+    z-index: 50;
+}
+
+.main-ul > li:hover {
+    transition: all 0.5s;
+    color: var(--yellow);
+    text-decoration: underline var(--yellow);
+}
+
+body.active{
+    overflow: hidden;
+}
+
+.jazz-logo{
+    width: 5rem;
+    max-height: auto;
+    padding: 1rem;
+
+}
+
+
+
+/* MAIN UL */
+
+.main-ul{
+    color: var(--white2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    position: relative;
+    left: 0%;
+    top: 0;
+    height: 100%;
+    background-color: transparent;
+    text-align: center;
+    transition: none;
+    z-index: 50;
+}
+
+li{
+    list-style-type: none;
+    margin: 0rem auto;
+    cursor: pointer;
+}
+
+.first-li{
+    margin-top: 0rem;
+}
+}

@@ -268,3 +268,153 @@ footer > p {
 .student-project > span{
     padding-left: 1rem;
 }
+
+
+/* 500PX MEDIA QUERY */
+
+@media only screen and (min-width: 500px){
+
+    /* BURGER MENU */
+
+.burger{
+    color: white;
+    margin: 0.5rem 1.5rem 0.5rem 0;
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transform: scale(1.5);
+}
+
+.burger.active{
+opacity: 1;
+}
+
+.main-ul.active{
+    left: 0%;
+    z-index: 50;
+}
+
+.main-ul > li:hover {
+    transition: all 0.5s;
+    color: var(--yellow);
+    text-decoration: underline var(--yellow);
+}
+
+body.active{
+    overflow: hidden;
+}
+
+.jazz-logo{
+    width: 5rem;
+    max-height: auto;
+    padding: 1rem;
+
+}
+
+
+
+
+
+/* MAIN UL */
+
+.main-ul{
+    color: var(--white2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    position: relative;
+    left: 0%;
+    top: 0;
+    height: 100%;
+    background-color: transparent;
+    text-align: center;
+    transition: none;
+    z-index: 50;
+}
+
+li{
+    list-style-type: none;
+    margin: 0rem auto;
+    cursor: pointer;
+}
+
+.first-li{
+    margin-top: 0rem;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: var(--dark);
+    color: var(--white2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2rem;
+    justify-content: space-between;
+    max-width: 40%;
+}
+
+}
+
+/* 800PX MEDIA QUERY */
+
+@media only screen and (min-width: 800px){
+    /* GRID */
+
+#shop-grid{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    row-gap: 5rem;
+    justify-content: center;
+    align-content: center;
+    margin: 3rem auto;
+    text-align: center;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.inside-template:nth-child(even){
+    border-left: none;
+}
+
+.inside-template:nth-child(odd){
+    border-right: none;
+}
+
+
+
+/* SHOP INDIVIDUAL CARD */
+
+.inside-template{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SHOP ALBUM IMAGE */
+
+.template-img{
+    width: 15rem;
+    height: 15rem;
+    filter: drop-shadow(2px 4px 6px var(--dark));
+    cursor: pointer;
+
+}
+}
