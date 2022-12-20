@@ -94,7 +94,7 @@ body.active{
     padding: 0.5rem;
     position: fixed;
     left: -100%;
-    top: 4rem;
+    top: 3.5rem;
     height: 100vh;
     background-color: var(--dark);
     text-align: center;
@@ -380,7 +380,7 @@ li{
     height: 70%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     margin: 1rem auto;
 }
@@ -411,10 +411,8 @@ li{
 
 .modal1-btns > button {
     padding: 0.5rem 1.5rem;
-    width: 80%;
+    width: 10rem;
     border-radius: 30px;
-    font-size: 1rem;
-
 }
 
 .btn-span{
@@ -473,7 +471,7 @@ li{
     height: 70%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     margin: 1rem auto;
 }
@@ -503,7 +501,7 @@ li{
 
 .modal2-btns > button {
     padding: 0.5rem 1.5rem;
-    width: 80%;
+    width: 10rem;
     border-radius: 30px;
 }
 
@@ -556,7 +554,7 @@ li{
     height: 70%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     margin: 1rem auto;
 }
@@ -589,7 +587,7 @@ li{
 
 .modal3-btns > button {
     padding: 0.5rem 1.5rem;
-    width: 80%;
+    width: 10rem;
     border-radius: 30px;
 }
 
@@ -659,5 +657,159 @@ footer > p {
 
 .student-project > span{
     padding-left: 1rem;
+}
+
+/* 500PX MEDIA QUERY */
+
+@media only screen and (min-width: 500px){
+
+    /* BURGER MENU */
+
+.burger{
+    color: white;
+    margin: 0.5rem 1.5rem 0.5rem 0;
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transform: scale(1.5);
+}
+
+.burger.active{
+opacity: 1;
+}
+
+.main-ul.active{
+    left: 0%;
+    z-index: 50;
+}
+
+.main-ul > li:hover {
+    transition: all 0.5s;
+    color: var(--yellow);
+    text-decoration: underline var(--yellow);
+}
+
+body.active{
+    overflow: hidden;
+}
+
+.jazz-logo{
+    width: 5rem;
+    max-height: auto;
+    padding: 1rem;
+
+}
+
+
+
+/* MAIN UL */
+
+.main-ul{
+    color: var(--white2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    position: relative;
+    left: 0%;
+    top: 0;
+    height: 100%;
+    background-color: transparent;
+    text-align: center;
+    transition: none;
+    z-index: 50;
+}
+
+li{
+    list-style-type: none;
+    margin: 0rem auto;
+    cursor: pointer;
+}
+
+.first-li{
+    margin-top: 0rem;
+}
+
+
+
+
+/* NEW RELEASES INDIVIDUAL CARD */
+
+.inside-template{
+    display: inline-block;
+    
+    flex-direction: column;
+    height: 100%;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: var(--dark);
+    color: var(--white2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2rem;
+    justify-content: space-between;
+    max-width: 40%;
+}
+
+}
+
+/* 800PX MEDIA QUERY */
+/* 800PX MEDIA QUERY */
+/* 800PX MEDIA QUERY */
+
+@media only screen and (min-width: 800px){
+
+    /* NEW RELEASES INDIVIDUAL CARD */
+
+    .inside-template{
+        display: inline-block;
+        flex-direction: column;
+        height: 100%;
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+}
+
+    /* UPCOMING EVENTS H2 + ARROW */
+
+    .upcoming-events-div{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        margin: 0rem auto 3rem auto;
+}
+
+    .events-h2{
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        padding: 0 0.5rem 0.5rem 0;
+        margin-top: 0rem;
+        color: var(--dark);
+}
+
+
 }
 
