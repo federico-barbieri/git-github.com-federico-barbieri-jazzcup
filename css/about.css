@@ -493,6 +493,254 @@ footer{
     justify-content: space-between;
     max-width: 40%;
 }
+
+
+
+/* PRACTICE */
+
+    /* HERO SECTION */
+
+    #hero{
+        width: 100vw;
+        background-color: var(--dark);
+        height: auto;
+        display: grid;
+        grid-template-areas: 
+        "title title"
+        "image image"
+        "paragraph paragraph"
+        "button button";
+    
+        position: relative;
+        padding: 1rem;
+        color: var(--white2);
+        overflow: hidden;
+    }
+    
+    .about-h1{
+        display: block;
+        width: 100%;
+        font-size: 5rem;
+    
+        margin: 5rem auto 2rem 5rem;
+        z-index: 10;
+        color: var(--white2);
+        font-family: articulat-heavy-cf, sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        text-align: left;
+        grid-area: title;
+    }
+    
+    .hero-about-span{
+        font-weight: 400;
+    }
+    
+    .about-img{
+        background-image: url("../img/about-album-yellow.png");
+        width: 40rem;
+        height: 60vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin: 0 -10rem 2rem 0;
+        grid-area: image;
+    }
+    
+    .hero-p{
+        text-align: left;
+        line-height: 2;
+        padding-bottom: 2rem;
+        grid-area: paragraph;
+        width: 80%;
+        margin-left: 5rem;
+    }
+    
+    .contact-btn{
+        background-color: var(--yellow);
+        color: var(--dark);
+        border: 1px solid var(--dark);
+        margin: 2rem auto 4rem auto;
+        border-radius: 30px;
+        padding: 0.5rem 2rem;
+        cursor: pointer;
+        grid-area: button;
+        font-size: 1.5rem;
+    }
+    
+    
+    /* MEMBERSHIP SECTION */
+    
+    #membership{
+        width: 100vw;
+        background-color: var(--white2);
+        height: auto;
+        height: auto;
+        display: grid;
+        grid-template-areas: 
+        "title title"
+        "image image"
+        "paragraph paragraph"
+        "perk perk"
+        "button button";
+        position: relative;
+        padding: 1rem;
+        color: var(--dark);
+    }
+    
+    .membership-h2{
+        display: block;
+        width: 100%;
+        font-size: 5rem;
+        text-align: center;
+        margin: 6rem 5rem 8rem auto;
+        z-index: 10;
+        color: var(--dark);
+        font-family: articulat-heavy-cf, sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        text-align: right;
+        grid-area: title;
+    }
+    
+    .membership-about-span{
+        font-weight: 400;
+    }
+    
+    .membership-img{
+        background-image: url("../img/membership-pic.png");
+        width: 40rem;
+        height: 60vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin: -12rem 0 2rem -16rem;
+        grid-area: image;
+    }
+    
+    .membership-p{
+        text-align: right;
+        line-height: 2;
+        padding-bottom: 0rem;
+        font-size: 1.5rem;
+        width: 100%;
+        grid-area: paragraph;
+        margin: 0 10rem 0 0;
+    }
+    
+    .membership-btn{
+        background-color: var(--yellow);
+        color: var(--dark);
+        border: 1px solid var(--dark);
+        margin: 2rem auto;
+        border-radius: 30px;
+        padding: 0.5rem 2rem;
+        cursor: pointer;
+        grid-area: button;
+        font-size: 1.5rem;
+    }
+    
+    .membership-btn:hover{
+        transition: all 0.5s;
+        background-color: var(--white2);
+        border: 1px solid var(--yellow);
+    }
+    
+    /* MEMBERSHIP UL */
+    
+    .membership-ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 5rem;
+        grid-area: perk;
+    }
+    
+    .membership-li{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        list-style-type: none;
+        text-decoration: none;
+        padding: 0;
+    }
+    
+    .inside-li-div{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    hr{
+        width: 80%;
+        color: var(--dark);
+    }
+    
+    /* arrows down */
+    
+    .arrow-btn{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    /* membership paragraphs */
+    
+    .p-benefits{
+        padding: 1rem;
+        width: 80%;
+        font-size: 1rem;
+        margin-top: 1rem;
+        display: none;
+        text-align: left;
+    }
+    
+    .p-price{
+        padding: 1rem;
+        width: 80%;
+        font-size: 1rem;
+        margin-top: 1rem;
+        text-align: left;
+        display: none;
+    }
+    
+    .p-faq{
+        padding: 1rem;
+        width: 80%;
+        font-size: 1rem;
+        margin-top: 1rem;
+        text-align: left;
+        display: none;
+    }
+    
+    
+    /* membership btn */
+    
+    .membership-btn{
+        background-color: var(--dark);
+        color: var(--white2);
+        border: 1px solid var(--dark);
+        margin: -2rem auto 2rem auto;
+        border-radius: 30px;
+        padding: 0.5rem 2rem;
+        cursor: pointer;
+    }
+    
+    .membership-btn:hover{
+        transition: all 0.5s;
+        background-color: var(--white2);
+        color: var(--dark);
+        border: 1px solid var(--dark);
+    }
+
+
 }
 
 @media only screen and (min-width: 800px){
