@@ -159,29 +159,6 @@ li{
     background-color: var(--dark);
 }
 
-.vinyl-hero{
-    width: 20rem;
-    height: auto;
-    transform: translate(-10rem, 0rem) rotateZ(0);
-    position: absolute;
-    z-index: 9;
-}
-
-@keyframes spin {
-    0% {transform: translate(-10rem, 0rem) rotateZ(0deg);}
-    100% {transform: translate(-10rem, 0rem) rotateZ(1800deg);} 
-}
-
-.vinyl-spins{
-    animation-name: spin;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
-    animation-direction: normal;
-    animation-timing-function: linear;
-}
-
-
 
 /* NEW RELEASES SECTION */
 

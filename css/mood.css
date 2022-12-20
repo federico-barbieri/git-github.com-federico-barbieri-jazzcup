@@ -114,9 +114,9 @@ li{
 }
 
 
-/* EVENTS SECTION */
+/* MOOD SECTION */
 
-#events{
+#mood{
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -127,9 +127,9 @@ li{
 }
 
 
-/* SHOP TITLE */
+/* MOOD TITLE */
 
-.events-h2{
+.mood-h2{
     width: 100%;
     font-size: 2.5rem;
     margin: 4rem 0 1rem 3rem;
@@ -138,48 +138,72 @@ li{
     text-align: left;
 }
 
-/* GRID */
+.vinyl-hero{
+    width: 20rem;
+    height: auto;
+    transform: translate(-10rem, 5rem) rotateZ(0);
+    position: absolute;
+    z-index: 9;
+}
 
-#events-grid{
+@keyframes spin {
+    0% {transform: translate(-10rem, 0rem) rotateZ(0deg);}
+    100% {transform: translate(-10rem, 0rem) rotateZ(1800deg);} 
+}
+
+.vinyl-spins{
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+
+.mood-p{
+    text-align: left;
+    line-height: 2;
+    padding: 2rem;
+}
+
+.choose-btn{
+    background-color: var(--yellow);
+    color: var(--dark);
+    border: 1px solid var(--dark);
+    margin: 25rem auto 4rem auto;
+    border-radius: 30px;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+}
+
+.choose-btn:hover{
+    transition: all 0.5s;
+    background-color: var(--dark);
+    border: 1px solid var(--dark);
+    color: var(--white2);
+}
+
+/* MOODLIST SECTION */ 
+
+#moodlist{
     width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    place-items: center;
-    place-content: center;
-    place-self: center;
-    justify-content: center;
-    align-content: center;
-    margin: 1rem auto;
-    text-align: center;
-    overflow: hidden;
-    padding: 0;
-}
-
-#events-grid > li {
     display: flex;
-    width: 100%;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
 }
 
-#events-grid > li > img {
-    max-width: 80%;
-    filter: drop-shadow(2px 4px 6px var(--dark));
+.moodlist-ul{
+    padding: 0;
+    width: 100%;
     margin: 0 auto 2rem auto;
 }
 
-#events-grid > li > img:hover {
+.moodlist-ul > li:hover {
     transition: all 0.5s;
-    
-    filter: drop-shadow(2px 8px 6px var(--dark));
-    margin: 0 auto 2.5rem auto;
-}
-
-.event-date{
-    margin: 0 auto 1rem auto;
+    cursor: pointer;
+    text-decoration: underline var(--yellow);
 }
 
 

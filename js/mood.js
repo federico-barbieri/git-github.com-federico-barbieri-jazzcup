@@ -23,3 +23,13 @@ document.querySelectorAll('.main-li').forEach(item => item.addEventListener('cli
     navUl.classList.remove('active');
     burger.innerHTML = '<i class="fa-solid fa-bars"></i>';
 }))
+
+
+// vinyl
+
+const vinyl = document.querySelector('.vinyl-hero');
+
+
+window.onload = () => {
+   // vinyl.classList.add("vinyl-spins");
+}
