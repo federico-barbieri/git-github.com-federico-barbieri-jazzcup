@@ -145,13 +145,21 @@ li{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(16, 1fr);
+    row-gap: 5rem;
     justify-content: center;
     align-content: center;
     margin: 3rem auto;
     text-align: center;
-    border: 2px solid red;
     overflow: hidden;
     padding: 1rem;
+}
+
+.inside-template:nth-child(even){
+    border-left: 1px solid var(--dark);
+}
+
+.inside-template:nth-child(odd){
+    border-right: 1px solid var(--dark);
 }
 
 
@@ -165,7 +173,6 @@ li{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 /* SHOP ALBUM IMAGE */
