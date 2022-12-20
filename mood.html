@@ -22,8 +22,8 @@
                 <a href="index.html"><img class="jazz-logo" src="img/jazz-logo.png" alt="Logo of JazzCup"></a>
                 <ul class="main-ul">
      
-                    <li class="main-li first-li">About</li>
-                    <li class="main-li"><a href="mood.html">Mood Explorer</a></li>
+                    <li class="main-li first-li"><a href="about.html">About</a></li>
+                    <li class="main-li">Mood Explorer</li>
                     <li class="main-li"><a href="shop.html">Shop</a></li>
                     <li class="main-li"><a href="events.html">Events</a></li>
                     
@@ -53,18 +53,47 @@
 
             </p>
 
-            <button type="button" class="choose-btn">Choose your mood</button>
+            <a href="#moodlist-ul"><button type="button" class="choose-btn">Choose your mood</button></a>
      
         </section>
 
         <section id="moodlist">
 
-            <ul class="moodlist-ul">
-                <li>-Happy-</li>
-                <li>-Sad-</li>
-                <li>-Dreamy-</li>
-                <li>-Joyful-</li>
-                <li>-Melancholic-</li>
+            <!--MODAL -->
+
+            <div class="modal1Content">
+
+                <div class="info-close1">
+
+                <button id="closeModal1"><i class="fa-solid fa-x"></i></button>
+                <img class="mood-img" src="img/moods/happy.jpg" alt="">
+                             
+
+                </div>
+                
+                <p class="artist-name"><em>Artist name</em></p>
+
+                <div class="modal1-btns">
+                    <button class="info-btn">
+                        <span class="btn-span"> More info</span><i class="fa-solid fa-arrow-right info-arrow"></i>
+                    </button>
+                    <button class="buy-btn">
+                        <span class="btn-span">Buy album</span><i class="fa-solid fa-arrow-right info-arrow"></i>
+                    </button>
+                </div>
+                
+                <span class="price"><strong>200 dkk</strong></span>
+            
+            </div>
+
+              <!--MODAL -->
+
+            <ul id="moodlist-ul">
+                <li class="happy">-Happy-</li>
+                <li class="sad">-Sad-</li>
+                <li class="dreamy">-Dreamy-</li>
+                <li class="joyful">-Joyful-</li>
+                <li class="melancholic">-Melancholic-</li>
             </ul>
         </section>
 
